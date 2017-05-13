@@ -9,6 +9,7 @@ describe('Index Route', () => {
 
     indexRoute(null, res)
 
+    expect(res.result.statusCode).toBe(200)
     expect(res.result.json).toEqual({
       message: 'Hello from hot loaded route, try to change me'
     })
