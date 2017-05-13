@@ -1,0 +1,30 @@
+{
+  "name": "backend-webpack-hmr",
+  "version": "0.0.1",
+  "description": "Starter for webpack with HMR for backend services",
+  "main": "index.js",
+  "author": "Branko Krstic<saicoder.net@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "rm ./tmp/* ; webpack",
+    "test": "jest",
+    "build": "webpack --config webpack.production.config.js --define process.env.NODE_ENV=\"production\""
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "jest": "^20.0.1",
+    "regenerator-runtime": "^0.10.5",
+    "start-server-webpack-plugin": "^2.2.0",
+    "webpack": "^2.5.1",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
