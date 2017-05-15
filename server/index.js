@@ -17,7 +17,7 @@ const app = express()
 app.get('/', indexRoute)
 
 // TODO: Remove me. This demonstrates source map support
-app.get('/error', () => { throw new Error('This error should be on line 17 of index file') })
+app.get('/error', () => { throw new Error('This error should be on line 20 of index file') })
 
 app.use('/users', Router()
   .get('/', usersIndex)

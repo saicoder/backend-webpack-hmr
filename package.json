@@ -2,7 +2,7 @@
   "name": "backend-webpack-hmr",
   "version": "0.0.1",
   "description": "Starter for webpack with HMR for backend services",
-  "main": "index.js",
+  "main": "dist/server.js",
   "author": "Branko Krstic<saicoder.net@gmail.com>",
   "license": "MIT",
   "scripts": {
